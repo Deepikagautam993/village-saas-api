@@ -59,7 +59,7 @@ class ApiKey(Base):
     owner_name = Column(String)
 
 
-# ---------------- API USAGE (NEW - SAAS TRACKING) ----------------
+# ---------------- API USAGE ----------------
 class ApiUsage(Base):
     __tablename__ = "api_usage"
 
