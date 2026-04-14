@@ -1,4 +1,5 @@
-🌍 Village SaaS API
+# 🌍 Village SaaS API
+
 A production-style SaaS-based REST API built using FastAPI that manages hierarchical geographical data of India including States, Districts, Sub-Districts, and Villages. The system includes API Key authentication, search, autocomplete, and database-driven usage tracking.
 
 🚀 Project Overview
@@ -11,7 +12,7 @@ This project simulates a real-world SaaS backend system where developers can acc
 🔎 Full-text search across all entities  
 💡 Smart autocomplete suggestions  
 📊 Database-driven API usage tracking  
-🚦 Basic security layer with header-based API key validation  
+🚦 Basic security layer with API key validation  
 📘 Interactive API documentation using Swagger UI  
 
 🛠️ Tech Stack
@@ -24,12 +25,12 @@ Uvicorn
 🔐 Authentication
 All protected endpoints require an API key in headers:
 
-x-api-key: YOUR_API_KEY
+x-api-key: YOUR_API_KEY  
 
 📌 API Endpoints
 
 🔑 Authentication
-POST /generate-api-key → Generate new API key
+POST /generate-api-key → Generate new API key  
 
 🏛️ States
 GET /states → Fetch all states  
@@ -51,13 +52,13 @@ POST /villages → Create village
 GET /villages → Fetch all villages  
 
 🔍 Search API
-GET /search?query=keyword → Search across states, districts, sub-districts, and villages  
+GET /search?query=keyword → Search across all entities  
 
 ⚡ Autocomplete API
-GET /autocomplete?query=keyword → Get smart suggestions from all entities  
+GET /autocomplete?query=keyword → Smart suggestions from all entities  
 
 📊 Usage Tracking
-GET /usage → View API usage status (tracked per API key)
+GET /usage → View API usage statistics  
 
 📈 Project Highlights
 ✔ Real-world SaaS backend architecture  
@@ -68,14 +69,11 @@ GET /usage → View API usage status (tracked per API key)
 ✔ Internship-ready backend project  
 
 🌐 API Documentation
-Once the server is running, access Swagger UI:
-
-http://127.0.0.1:8000/docs
+http://127.0.0.1:8000/docs  
 
 ▶️ Installation & Setup
-
-pip install -r requirements.txt
-uvicorn main:app --reload
+pip install -r requirements.txt  
+uvicorn main:app --reload  
 
 👩‍💻 Author
 Deepika Gautam
