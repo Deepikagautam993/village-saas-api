@@ -1,5 +1,4 @@
 # 🌍 Village SaaS API
-
 A production-style SaaS-based REST API built using FastAPI that manages hierarchical geographical data of India including States, Districts, Sub-Districts, and Villages. The system includes API Key authentication, search, autocomplete, and database-driven usage tracking.
 
 🚀 Project Overview
